@@ -51,7 +51,7 @@ html.js fieldset.collapsed {
   height: 1em;
 }
 html.js fieldset.collapsed .fieldset-wrapper {
-  display: none;
+  display: block;
 }
 fieldset.collapsible {
   position: relative;
