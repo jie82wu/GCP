@@ -9,12 +9,5 @@ function bootstrap_subtheme_preprocess_page(&$vars, $hook) {
 	}
 }
 
-function bootstrap_subtheme_preprocess_views_view(&$vars) {
-  if ($vars['view']->name == 'member_list') {
-    if (empty($vars['view']->exposed_input)) {
-      $vars['rows'] = array();
-      $vars['empty'] = '';
-    }
-  }
-}
+
 ?>

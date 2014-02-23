@@ -851,6 +851,7 @@ function get_callback_url() {
  * @return array
  */
 function socialloginandsocialshare_getuser_data($userprofile) {
+  
   $lrdata['fullname'] = (!empty($userprofile->FullName) ? $userprofile->FullName : '');
   $lrdata['profilename'] = (!empty($userprofile->ProfileName) ? $userprofile->ProfileName : '');
   $lrdata['nickname'] = (!empty($userprofile->NickName) ? $userprofile->NickName : '');
@@ -909,7 +910,7 @@ function socialloginandsocialshare_getuser_data($userprofile) {
        $lrdata['favoritethings'] .= $userprofile->FavoriteThings[$i]->Name . ",";
      }
    }
-  return $lrdata;
+   return $lrdata;
 }
 /**
  * Function that redircts user after login/registration..
