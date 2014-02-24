@@ -7702,16 +7702,20 @@ ul.sociallinks li { float: left; margin-left: 2%; }
 
 #block-menu-menu-user-menu-annoymous {
 float: right;
-    width: 412px;
+    width: 180px; text-align: center;
 	}
 #block-menu-menu-user-menu-annoymous ul li{
 float: left;
-width: 100px; line-height: 2.0em;
+width: 60px; line-height: 3.0em;
 }
 #block-menu-menu-user-menu-annoymous ul li a { color: #fff; }
 #block-menu-menu-user-menu-annoymous ul li a:hover, #block-menu-menu-user-menu-annoymous ul li a:focus { 
 background-color: #97310E !important;
 color: #fff !important; }
+
+#block-menu-menu-user-menu-annoymous .nav > li > a { padding: 10px 0 !important; }
+a.logo img { height: 50px; }
+
 
 
 
