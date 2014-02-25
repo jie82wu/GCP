@@ -8,15 +8,30 @@ html.overlay-open .navbar-fixed-top{z-index:400}html.js fieldset.collapsed{heigh
 }
 
 .views-row {
-	margin: 10px;
-	box-shadow: 0px 3px 0px 0px #bf3e11;
-	padding: 15px;
+	margin-bottom: 20px;
+	box-shadow: 4px -3px 0px 0px #bf3e11;
+	padding: 30px 50px;
 	background-color: #f5f5f5;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.views-label {
+	color: #bf3e11;
+	font-weight: 700;
+	font-size: 18px;
 }
 
 .views-field {
 	display: inline-block;
-	width: 49%;
+	width: 50%;
+	margin-bottom: 15px;
+	min-height: 40px;
+}
+
+.field-content {
+	margin-left: 15px;
+	margin-top: 5px;
 }
 
 ul.field-collection-view-links {
@@ -25,4 +40,9 @@ ul.field-collection-view-links {
 
 .field-collection-view-links li.edit, li.delete {
 	display: inline-block;
+}
+
+.field-collection-view-links a {
+	color: gray;
+	text-decoration: underline;
 }
