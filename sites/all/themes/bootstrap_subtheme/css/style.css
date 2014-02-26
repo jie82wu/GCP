@@ -14,6 +14,7 @@ main,
 nav,
 section,
 summary {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   display: block;
 }
 
@@ -393,7 +394,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -7691,7 +7692,7 @@ p.copyright {
     width: 90%;
 	}
 ul.sociallinks {
- float: left;
+    float: right;
     list-style: none outside none;
     margin: 0;
     padding: 0;
@@ -7715,6 +7716,121 @@ color: #fff !important; }
 
 #block-menu-menu-user-menu-annoymous .nav > li > a { padding: 10px 0 !important; }
 a.logo img { height: 50px; }
+
+/* profile page css*/
+.profile-wrap { width: 100%; float: left; margin: 0; }
+
+.prf-img { float: left; width: 26%; }
+.prf-img img { padding: 2px; border: 1px solid #D6E1E7; }
+.prf-text { float: left; width: 48%; margin-left: 2%; }
+
+.prf-box1, .prf-box2 {
+border: 1px solid #D6E1E7;
+    float: left;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+.prf-box1 label { float: left; margin-right: 10px; clear: left; }
+.prf-box1 p { margin-bottom: 0px !important;}
+div.field-name-field-profile-work-starting-date { float: left; }
+div.field-name-field-profile-work-ending-date:before {
+   content: "\00a0-\00a0"; float: left;
+}
+
+.prf-box2 .field-collection-view-links, .prf-box2 .action-links-field-collection-add {
+display: none;
+}
+.prf-box2 .field-collection-container, .prf-box2 .field-collection-view { border: none !important; }
+
+.prf-box1 div.field-name-field-profile-industry div.field-item, .prf-box1 div.field-name-field-profile-function  div.field-item {
+float: left; margin-right: 10px;
+}
+.prf-box1 p { float: left; width: 100%; }
+
+.prf-box2 div.field-name-field-experience { border-bottom: 1px solid #D6E1E7; }
+
+div.field-name-field-profile-edu-school, div.field-name-field-profile-edu-major, div.field-name-field-profile-edu-ending-date {
+float: left; margin-right: 5px;
+}
+div.field-name-field-profile-edu-major div.field-item:before {
+   content: " \00a0-\00a0 "; float: left;
+}
+div.field-name-field-education .field-item { margin-bottom: 0px !important; }
+
+div.field-name-field-education .field-collection-view  {
+padding: 0px !important; 
+}
+.page-profile-member h1.page-header { display: none; }
+
+.pref-connect {
+    background: none repeat scroll 0 0 #9FC748;    
+    border-radius: 3px;
+    color: #FFFFFF;	
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 20px;
+    text-align: center;
+	margin: 0 auto 0 6%;
+}
+
+.pref-connect a { text-decoration: none; color: #fff !important; font-weight: normal; font-family: "Calibri-Light",'calibrilight',sans-serif; 
+
+ }
+
+/* member list */
+.view-content {
+	font-family: Helvetica;
+}
+
+.view-member-list ul,ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.views-row {
+	margin: 0px 4px 20px 0;
+	box-shadow: 4px -3px 0px 0px #bf3e11;
+	padding: 40px 0px 10px 20px;
+	background-color: #fafafa;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.views-label {
+	color: #bf3e11;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.views-field {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 20px;
+	min-height: 40px;
+	padding: 0px 20px;
+}
+
+.field-content {
+	margin-left: 15px;
+	margin-top: 5px;
+	font-weight: 100;
+}
+
+ul.field-collection-view-links {
+	display: inline-block;
+}
+
+.field-collection-view-links li.edit, li.delete {
+	display: inline-block;
+}
+
+.field-collection-view-links a {
+	color: gray;
+	text-decoration: underline;
+}
 
 
 

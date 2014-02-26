@@ -97,7 +97,10 @@ function linkedin_profile_user_load($users) {
       module_load_include('inc', 'linkedin', 'linkedin');
       $fields = _linkedin_profile_vget_user_page_linkedin_fields();
       $profile = linkedin_get_profile_fields($account->uid, $fields);
-
+/*echo "<pre>";
+print_r($profile);
+echo "</pre>";
+exit();*/
       if (!isset($profile['error-code'])) {
         //Let themers hook into items
         $multiples = array(

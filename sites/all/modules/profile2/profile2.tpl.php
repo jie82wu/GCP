@@ -35,10 +35,32 @@
         <a href="<?php print $url; ?>"><?php print $title; ?></a>
     </h2>
   <?php endif; ?>
+  
+  <div class="profile-wrap">
+  <div class="prf-img"><?php print render($content['field_profile_image']); ?></div>
+  <div class="prf-text"><?php print render($content['field_profile_name']); ?><br/><?php print render($content['field_profile_title']); ?><br/>
+  <?php print render($content['field_profile_location']); ?></div>
+  <div class="pref-connect"><a href="#">Connect</a></div>
+  </div>
+  
+  <div class="prf-box1">
+  <p><label>Interest:</label> Education, Computer etc</p>
+  <label>Industry:</label> <?php print render($content['field_profile_industry']); ?>
+  <label>Functions:</label> <?php print render($content['field_profile_function']); ?>
+  <p><label>Company Website:</label> example.com</p>   
+  </div>
+  
+  <div class="prf-box2">
+  
+  <?php print render($content['field_experience']); ?>
+  
+<?php print render($content['field_education']); ?>
+  
+  </div>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
-      print render($content);
+      //print render($content);
     ?>
   </div>
 </div>

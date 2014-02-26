@@ -1,16 +1,53 @@
-Place downloaded and custom modules that extend your site functionality beyond
-Drupal core in this directory to ensure clean separation from core modules and
-to facilitate safe, self-contained code updates. Contributed modules from the
-Drupal community may be downloaded at http://drupal.org/project/modules.
+=== LINKEDIN INTEGRATION ===
 
-It is safe to organize modules into subdirectories, such as "contrib" for
-contributed modules, and "custom" for custom modules. Note that if you move a
-module to a subdirectory after it has been enabled, you may need to clear the
-Drupal cache so that it can be found.
+Maintainers:  Pascal Morin (bellesmanieres) Greg Harvey (greg.harvey) David
+Landry (davad) Kyle Mathews (kyle_mathews)
 
-In multisite configuration, modules found in this directory are available to
-all sites. Alternatively, the sites/your_site_name/modules directory pattern may
-be used to restrict modules to a specific site instance.
+see http://drupal.org/node/919598
 
-Refer to the "Developing for Drupal" section of the README.txt in the Drupal
-root directory for further information on extending Drupal with custom modules.
+/*********************************************
+Installation/initial configuration
+
+   See http://drupal.org/node/919412.
+
+
+/*********************************************
+Configuration/Usage
+
+After enabling the module, go to admin/config/services/linkedin. You can choose to
+display LinkedIn profile data as a tab, as a block, or inside the user profile
+page. If you choose to use the block display, you still have to enable it at
+admin/build/block. There is also a "hidden" display, which will output nothing
+but keep the data available under $profile->linkedin in user-profile.tpl.php if
+you need more control on the output. You can choose what fields to retrieve by
+using the checkboxes (see http://developer.linkedin.com/docs/DOC-1061 for the
+meaning of each), but keep in mind not all fields will output nicely by default
+and you will need some theming work to display some of them. (This feature is
+still in dev, and a few fields are missing.)  Also beware that the amount of
+information returned depends on the relationship (in LinkedIn.com) between the
+viewing and the viewed user. There is currently no ability to map individual
+fields to standard core "profile" module fields
+
+Be sure to check users have the permission to display this data. Users have to
+link their LinkedIn account to their local Drupal account and to opt-in for
+displaying these info from their preferences at user/%user/edit/linkedin .
+
+
+
+/*********************************************
+Theming
+
+The module provides the following templates :
+
+    * linkedin-user-page.tpl.php : main data output.
+    * linkedin-user-page-positions.tpl.php : renders the LinkedIn "positions" 
+      items 
+    * linkedin-user-page-position-item.tpl.php : renders individual LinkedIn 
+      "position" item 
+    * linkedin-user-page-educations.tpl.php : renders the LinkedIn "educations" 
+      items 
+    * linkedin-user-page-education-item.tpl.php : renders individual LinkedIn 
+      "education" item
+
+You can also use the following function, which outputs each individual field item
+<?php theme_linkedin_profile_user_page_item($item) ?>

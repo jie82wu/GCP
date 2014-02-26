@@ -159,7 +159,12 @@ function linkedin_get_profile_fields($uid, $fields = array()) {
  */
 function linkedin_get_fields($url, $tokens) {
   module_load_include('inc', 'linkedin');
-  return _linkedin_get_fields($url, $tokens);
+  $test = _linkedin_get_fields($url, $tokens);
+echo "<pre>";
+print_r($test);
+echo "</pre>";
+exit();
+  return $test; 
 }
 
 /*
