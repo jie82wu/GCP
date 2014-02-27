@@ -1,0 +1,29 @@
+/* Home page Header */
+#block-menu-menu-user-menu-annoymous {
+	float: right;
+ 	width: 300px; 
+	text-align: center;
+}
+#block-menu-menu-user-menu-annoymous ul li{
+	float: left;
+	width: 100px; 
+	line-height: 2.0em;
+}
+#block-menu-menu-user-menu-annoymous ul li a { 
+	color: #000000; 
+	font-family:verdana,arial,sans-serif;
+}
+#block-menu-menu-user-menu-annoymous ul li a:hover, #block-menu-menu-user-menu-annoymous ul li a:focus { 
+	background-color: #ff8019 !important;
+	color: #fff !important; 
+}
+#block-menu-menu-user-menu-annoymous .nav > li > a { 
+	padding: 10px 0 !important; 
+}
+
+a.logo img { 
+	height: 100px; 
+}
+
+
+

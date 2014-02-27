@@ -1,0 +1,19 @@
+p.copyright {
+	float: left;
+    width: 90%;
+	}
+ul.sociallinks {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+}
+ul.sociallinks li {
+	float: left; 
+	margin-left: 2%; 
+}
+.footer { 
+	padding-top: 
+	10px !important; 
+}
